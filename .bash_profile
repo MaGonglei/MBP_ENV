@@ -10,6 +10,8 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
 #enables colorfor iTerm
 export TERM=xterm-color
 export LANG=en_US.UTF-8
+
+export HISTSIZE=2000
 #Customer Commands
 alias l.="ls -a|grep '^\.'"
 alias l='ls -lah'
@@ -26,7 +28,7 @@ function ko()
     ps -ef|grep $1|awk '{print $2}'|xargs kill -9  #kill the specific processes
 }
 
-function goRemote()
+function remote()
 {
     /Users/magonglei/Develop/Remote/go.sh $1
 }
