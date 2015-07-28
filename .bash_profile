@@ -28,7 +28,13 @@ function ko()
     ps -ef|grep $1|awk '{print $2}'|xargs kill -9  #kill the specific processes
 }
 
-function remote()
+function pssh()
 {
-    /Users/magonglei/Develop/Remote/go.sh $1
+    ~/.myscipts/pssh.sh $1
+}
+
+function mscp()
+{
+    #$1=remoteId  $2=source $3=destination
+    ~/.myscipts/mscp.sh $1 $2 $3
 }
