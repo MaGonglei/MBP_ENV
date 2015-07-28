@@ -2,7 +2,7 @@
 RemoteId=$1
 
 RootDir=`dirname "$0"`
-source $RootDir/remoteInfo
+source $RootDir/remoteInfo.conf
 
 tMsg=Msg$RemoteId
 tKey=Key$RemoteId
