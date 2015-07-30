@@ -5,10 +5,8 @@ Source=$2
 Destination=$3
 FromRemote=$4
 
-
-
 RootDir=`dirname "$0"`
-source $RootDir/remoteInfo
+source $RootDir/remoteInfo.conf
 
 tMsg=Msg$RemoteId
 tKey=Key$RemoteId

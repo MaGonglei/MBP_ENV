@@ -22,7 +22,7 @@ alias lsa='ls -lah'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-
+alias cri='cat .myscipts/remoteInfo.conf'
 function ko()
 {
     ps -ef|grep $1|awk '{print $2}'|xargs kill -9  #kill the specific processes
