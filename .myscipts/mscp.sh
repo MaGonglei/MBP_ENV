@@ -18,7 +18,7 @@ tRemote=Remote$RemoteId
 echo ${!tMsg}
 if [ "x$FromRemote" == "x" ]
 then
-    scp -i ${!tKey} -P ${!tPort} $Source ${!tRemote}:$Destination
+    scp -i ${!tKey} -P ${!tPort} -r $Source ${!tRemote}:$Destination
 else
-    scp -i ${!tKey} -P ${!tPort} ${!tRemote}:$Source $Destination
+    scp -i ${!tKey} -P ${!tPort} -r  ${!tRemote}:$Source $Destination
 fi
