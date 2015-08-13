@@ -10,4 +10,5 @@ tPort=Port$RemoteId
 tRemote=Remote$RemoteId
 
 echo ${!tMsg}
+echo "ssh -i ${!tKey} -p ${!tPort} ${!tRemote}"
 ssh -i ${!tKey} -p ${!tPort} ${!tRemote}
