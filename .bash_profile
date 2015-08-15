@@ -36,5 +36,5 @@ function pssh()
 function mscp()
 {
     #$1=remoteId  $2=source $3=destination
-    ~/.myscipts/mscp.sh $1 $2 $3
+    ~/.myscipts/mscp.sh $1 $2 $3 $4
 }
