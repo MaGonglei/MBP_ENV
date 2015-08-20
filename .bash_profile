@@ -23,6 +23,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias cri='cat ~/.myscipts/remoteInfo.conf'
+alias flushdns='sudo dscacheutil -flushcache'
 function ko()
 {
     ps -ef|grep $1|awk '{print $2}'|xargs kill -9  #kill the specific processes
@@ -30,11 +31,11 @@ function ko()
 
 function pssh()
 {
-    ~/.myscipts/pssh.sh $1
+    ~/myscipts/pssh.sh $1
 }
 
 function mscp()
 {
     #$1=remoteId  $2=source $3=destination
-    ~/.myscipts/mscp.sh $1 $2 $3 $4
+    ~/myscipts/mscp.sh $1 $2 $3 $4
 }
