@@ -1,4 +1,4 @@
-#export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/opt/ansible/bin:$PATH"
 #enables colorin the terminal bash shell export
 export CLICOLOR=1
 
@@ -22,13 +22,17 @@ alias lsa='ls -lah'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias cri='cat ~/.myscipts/remoteInfo.conf'
+alias cri='cat ~/myscipts/remoteInfo.conf'
 alias flushdns='sudo dscacheutil -flushcache'
+alias blj='~/myscipts/auto-ssh-blj.expect'
+alias 182='~/myscipts/auto-ssh-182.expect'
+
 function ko()
 {
     ps -ef|grep $1|awk '{print $2}'|xargs kill -9  #kill the specific processes
 }
 
+#自动登录其他服务器，密钥形式
 function pssh()
 {
     ~/myscipts/pssh.sh $1
@@ -39,3 +43,5 @@ function mscp()
     #$1=remoteId  $2=source $3=destination
     ~/myscipts/mscp.sh $1 $2 $3 $4
 }
+
+
