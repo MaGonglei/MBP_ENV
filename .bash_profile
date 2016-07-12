@@ -5,6 +5,11 @@ export CLICOLOR=1
 #sets up thecolor scheme for list export
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+#set ansible
+#source /opt/ansible/hacking/env-setup
+export PYTHONPATH=/opt/ansible/lib:
+export ANSIBLE_INVENTORY=~/myscipts/ansibleHosts
+
 #sets up theprompt color (currently a green similar to linux terminal)
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
 #enables colorfor iTerm
@@ -25,7 +30,7 @@ alias .....='cd ../../../..'
 alias cri='cat ~/myscipts/remoteInfo.conf'
 alias flushdns='sudo dscacheutil -flushcache'
 alias blj='~/myscipts/auto-ssh-blj.expect'
-alias 182='~/myscipts/auto-ssh-182.expect'
+alias pblj='~/myscipts/auto-ssh-pblj.expect'
 
 function ko()
 {
