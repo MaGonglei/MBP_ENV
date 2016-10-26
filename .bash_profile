@@ -31,7 +31,9 @@ alias cri='cat ~/myscipts/remoteInfo.conf'
 alias flushdns='sudo dscacheutil -flushcache'
 alias blj='~/myscipts/auto-ssh-blj.expect'
 alias pblj='~/myscipts/auto-ssh-pblj.expect'
+alias rd-dkrtbj-1282='~/myscipts/auto-ssh-rd-dkrtbj1282.expect'
 alias start-docker-doc='docker-compose -f /Users/magonglei/Develop/Code/docker-doc/docker-compose.yml  up -d'
+alias tdocker='docker -H 100.73.3.8:4000'
 
 function ko()
 {
